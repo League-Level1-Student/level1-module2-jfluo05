@@ -4,7 +4,6 @@
  *    Level 1
  */
 
-
 /* Your mission and you have to accept it:
  *         Add a main method to the Popcorn class to cook a bag of Popcorn. Don't change the existing methods.
  */
@@ -30,13 +29,16 @@ class Microwave {
 	void startMicrowave() {
 		if (thingToBeCooked == null)
 			System.out.println("Microwave says: there's nothing in the microwave!");
-		for (int i = 0; i < cookTime*10 + 1; i++) {
+		for (int i = 0; i < cookTime * 10 + 1; i++) {
 			thingToBeCooked.applyHeat();
 		}
 	}
 }
 
 public class Popcorn {
+	public static void main(String[] args) {
+
+	}
 
 	private int kernels = 20;
 	private String flavor;
@@ -45,7 +47,6 @@ public class Popcorn {
 		this.flavor = flavor;
 		System.out.println("Popcorn says: making package of " + this.flavor + " popcorn.");
 	}
-
 
 	public void applyHeat() {
 		pause();
@@ -65,8 +66,5 @@ public class Popcorn {
 			e.printStackTrace();
 		}
 	}
-	
+
 }
-
-
-

@@ -1,9 +1,8 @@
 
 public class PlatypusRunner {
-	static Platypus platypus = new Platypus();
 
 	public static void main(String[] args) {
+		Platypus platypus = new Platypus("Perry");
 		platypus.sayHi();
-
 	}
 }
