@@ -5,13 +5,10 @@ int findCode(Vault vault){
 	
 	for(int i = 0; i<1000000;i++) {
 	
-	tryCode(i);
-	if (i==138465) {
+	if (vault.tryCode(i)) {
 		return i;
 	}
-	else {
-		return -1;
-	}
 }
+return -1;
 }
 }
